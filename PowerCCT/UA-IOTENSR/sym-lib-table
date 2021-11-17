@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name SCD4X)(type Legacy)(uri ${KIPRJMOD}/SCD4X.lib)(options "")(descr ""))
-)

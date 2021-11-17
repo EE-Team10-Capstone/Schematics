@@ -1,0 +1,163 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Espressif:ESP32 U?
+U 1 1 6195BA45
+P 2850 2650
+F 0 "U?" H 2875 4465 50  0000 C CNN
+F 1 "ESP32" H 2875 4374 50  0000 C CNN
+F 2 "" H 3100 2900 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf" H 3100 2900 50  0001 C CNN
+	1    2850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L SCD4X:SCD4X U?
+U 1 1 6195D75D
+P 2650 5750
+F 0 "U?" H 2650 6215 50  0000 C CNN
+F 1 "SCD4X" H 2650 6124 50  0000 C CNN
+F 2 "" H 2650 6200 50  0001 C CNN
+F 3 "" H 2650 6200 50  0001 C CNN
+	1    2650 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5650 3250 5650
+Wire Wire Line
+	3100 5850 3250 5850
+Text GLabel 3250 5650 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	4350 2550 4500 2550
+Text GLabel 4500 2550 2    50   Input ~ 0
+SCL
+Text GLabel 3250 5850 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4350 2450 4500 2450
+Text GLabel 4500 2450 2    50   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR?
+U 1 1 61961638
+P 4350 4150
+F 0 "#PWR?" H 4350 3900 50  0001 C CNN
+F 1 "GND" H 4355 3977 50  0000 C CNN
+F 2 "" H 4350 4150 50  0001 C CNN
+F 3 "" H 4350 4150 50  0001 C CNN
+	1    4350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L TI_PMICs:BQ24196RGER U?
+U 1 1 61961F51
+P 9900 1900
+F 0 "U?" H 9900 3070 50  0000 C CNN
+F 1 "BQ24196RGER" H 9900 2979 50  0000 C CNN
+F 2 "QFN50P400X400X100-25N" H 9900 1900 50  0001 L BNN
+F 3 "" H 9900 1900 50  0001 L BNN
+	1    9900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61965BA6
+P 10600 2800
+F 0 "#PWR?" H 10600 2550 50  0001 C CNN
+F 1 "GND" H 10605 2627 50  0000 C CNN
+F 2 "" H 10600 2800 50  0001 C CNN
+F 3 "" H 10600 2800 50  0001 C CNN
+	1    10600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6200 2550 6250
+Wire Wire Line
+	2550 6250 2650 6250
+Wire Wire Line
+	2750 6250 2750 6200
+Wire Wire Line
+	2650 6200 2650 6250
+Connection ~ 2650 6250
+Wire Wire Line
+	2650 6250 2750 6250
+$Comp
+L power:GND #PWR?
+U 1 1 61967846
+P 2650 6250
+F 0 "#PWR?" H 2650 6000 50  0001 C CNN
+F 1 "GND" H 2655 6077 50  0000 C CNN
+F 2 "" H 2650 6250 50  0001 C CNN
+F 3 "" H 2650 6250 50  0001 C CNN
+	1    2650 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 1000 10750 1000
+Text GLabel 10750 1000 2    50   Input ~ 0
+BATT
+Wire Wire Line
+	8750 3650 9150 3650
+Wire Wire Line
+	9350 4000 9350 4100
+Wire Wire Line
+	9350 4100 9150 4100
+Wire Wire Line
+	9150 4100 9150 4000
+Wire Wire Line
+	9150 3650 9150 3750
+$Comp
+L power:GND #PWR?
+U 1 1 6196C16A
+P 9350 4100
+F 0 "#PWR?" H 9350 3850 50  0001 C CNN
+F 1 "GND" H 9355 3927 50  0000 C CNN
+F 2 "" H 9350 4100 50  0001 C CNN
+F 3 "" H 9350 4100 50  0001 C CNN
+	1    9350 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9350 4100
+Text GLabel 8750 3650 0    50   Input ~ 0
+BATT
+Wire Wire Line
+	9350 4000 9500 4000
+Wire Wire Line
+	9350 4000 9350 3800
+Wire Wire Line
+	9350 3800 9500 3800
+Connection ~ 9350 4000
+$Comp
+L JSTConns:S2B-ZR-SM4A-TF(LF)(SN) J?
+U 1 1 6196E09B
+P 9900 3900
+F 0 "J?" H 10128 3996 50  0000 L CNN
+F 1 "S2B-ZR-SM4A-TF(LF)(SN)" H 10128 3905 50  0000 L CNN
+F 2 "JST_S2B-ZR-SM4A-TF(LF)(SN)" H 9900 3900 50  0001 L BNN
+F 3 "" H 9900 3900 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 9900 3900 50  0001 L BNN "STANDARD"
+F 5 "JST" H 9900 3900 50  0001 L BNN "MF"
+F 6 "N/A" H 9900 3900 50  0001 L BNN "PARTREV"
+	1    9900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3650 9500 3650
+Wire Wire Line
+	9500 3650 9500 3700
+Connection ~ 9150 3650
+$EndSCHEMATC

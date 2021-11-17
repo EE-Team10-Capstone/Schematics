@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SCD4X)(type Legacy)(uri ${KIPRJMOD}/SCD4X.lib)(options "")(descr ""))
+  (lib (name JSTConns)(type Legacy)(uri C:/Users/dekle/Documents/WorkSpace/Capstone/Schematics/libraries/JSTConns/S2B-ZR-SM4A-TF_LF__SN_.lib)(options "")(descr ""))
+)
