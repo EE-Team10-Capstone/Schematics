@@ -3,5 +3,4 @@
   (lib (name JSTConns)(type Legacy)(uri C:/Users/dekle/Documents/WorkSpace/Capstone/Schematics/libraries/JSTConns/S2B-ZR-SM4A-TF_LF__SN_.lib)(options "")(descr ""))
   (lib (name PMIC)(type Legacy)(uri D:/WorkSpace/Capstone/Schematics/libraries/BQ24196/BQ24196RGER.lib)(options "")(descr ""))
   (lib (name Espressif)(type Legacy)(uri D:/WorkSpace/Capstone/Schematics/libraries/Espressif/libraries/Espressif.lib)(options "")(descr ""))
-  
 )
