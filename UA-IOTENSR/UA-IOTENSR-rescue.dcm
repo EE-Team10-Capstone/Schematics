@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HDSP-4832-Samacs
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-6/DSA-115790.pdf
+$ENDCMP
+#
+$CMP LM3914VX_NOPB-Samacs
+F http://www.ti.com/lit/gpn/lm3914
+$ENDCMP
+#
+#End Doc Library

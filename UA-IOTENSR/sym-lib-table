@@ -5,4 +5,5 @@
   (lib (name Espressif)(type Legacy)(uri ${KIPRJMOD}/Espressif.lib)(options "")(descr ""))
   (lib (name VoltReg)(type Legacy)(uri ${KIPRJMOD}/BD33KA5FP-E2.lib)(options "")(descr ""))
   (lib (name ETS636SK50)(type Legacy)(uri ${KIPRJMOD}/ETS636SK50.lib)(options "")(descr ""))
+  (lib (name UA-IOTENSR-rescue)(type Legacy)(uri ${KIPRJMOD}/UA-IOTENSR-rescue.lib)(options "")(descr ""))
 )
