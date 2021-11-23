@@ -1,0 +1,28 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HDSP-4832
+D Avago Light Bar Array Green/Red/Yellow LED Display, 1900 (Green) ??cd, 1900 (Yellow) ??cd, 3500 (Red) ??cd
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-6/DSA-115790.pdf
+$ENDCMP
+#
+$CMP LM3914VX_NOPB
+D Dot/Bar Display Driver
+F http://www.ti.com/lit/gpn/lm3914
+$ENDCMP
+#
+$CMP NE555DR
+D Single Precision Timer
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP PRTR5V0U2X,215
+D ESD Protection Diodes 5.5V Dual SOT143B NXP PRTR5V0U2X,215 Dual Uni-Directional TVS Diode, 4-Pin SOT-143B
+F https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf
+$ENDCMP
+#
+$CMP ZX62-AB-5PA_31_
+D Micro-AB USB Receptacle, SMT
+F https://componentsearchengine.com/Datasheets/1/ZX62-AB-5PA(31).pdf
+$ENDCMP
+#
+#End Doc Library
