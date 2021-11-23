@@ -148,14 +148,16 @@ $EndSheet
 Text Notes 7000 7000 0    236  ~ 0
 ESP32 Schematic
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR06
 U 1 1 61A18D2A
 P 3550 5000
-F 0 "#PWR?" H 3550 4850 50  0001 C CNN
+F 0 "#PWR06" H 3550 4850 50  0001 C CNN
 F 1 "+3V3" V 3565 5128 50  0000 L CNN
 F 2 "" H 3550 5000 50  0001 C CNN
 F 3 "" H 3550 5000 50  0001 C CNN
 	1    3550 5000
 	0    -1   -1   0   
 $EndComp
+Text GLabel 6550 5150 2    50   Input ~ 0
+DAC_SIGNAL
 $EndSCHEMATC
