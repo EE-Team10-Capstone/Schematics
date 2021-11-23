@@ -16,131 +16,129 @@ $EndDescr
 $Comp
 L power:GND #PWR01
 U 1 1 61961638
-P 3550 5550
-F 0 "#PWR01" H 3550 5300 50  0001 C CNN
-F 1 "GND" H 3555 5377 50  0000 C CNN
-F 2 "" H 3550 5550 50  0001 C CNN
-F 3 "" H 3550 5550 50  0001 C CNN
-	1    3550 5550
+P 900 4200
+F 0 "#PWR01" H 900 3950 50  0001 C CNN
+F 1 "GND" H 905 4027 50  0000 C CNN
+F 2 "" H 900 4200 50  0001 C CNN
+F 3 "" H 900 4200 50  0001 C CNN
+	1    900  4200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 5350 3650 5350
+	900  4000 1000 4000
 Wire Wire Line
-	3550 5450 3650 5450
+	900  4100 1000 4100
 Wire Wire Line
-	3550 5550 3650 5550
+	900  4200 1000 4200
 $Comp
 L Espressif:ESP32-S2-WROOM U1
 U 1 1 619E5D94
-P 5050 3900
-F 0 "U1" H 5075 5815 50  0000 C CNN
-F 1 "ESP32-S2-WROOM" H 5075 5724 50  0000 C CNN
-F 2 "Espressif:ESP32-S2-WROOM" H 5050 2000 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf" H 5050 3900 50  0001 C CNN
-	1    5050 3900
+P 2400 2550
+F 0 "U1" H 2425 4465 50  0000 C CNN
+F 1 "ESP32-S2-WROOM" H 2425 4374 50  0000 C CNN
+F 2 "Espressif:ESP32-S2-WROOM" H 2400 650 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf" H 2400 2550 50  0001 C CNN
+	1    2400 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 5250 3550 5250
+	1000 3900 900  3900
 Wire Wire Line
-	3550 5250 3550 5350
-Connection ~ 3550 5350
+	900  3900 900  4000
+Connection ~ 900  4000
 Wire Wire Line
-	3550 5350 3550 5450
-Connection ~ 3550 5450
+	900  4000 900  4100
+Connection ~ 900  4100
 Wire Wire Line
-	3550 5450 3550 5550
-Connection ~ 3550 5550
+	900  4100 900  4200
+Connection ~ 900  4200
 Wire Wire Line
-	6500 3100 6650 3100
-Text GLabel 6650 3100 2    50   Input ~ 0
+	3850 1750 4000 1750
+Text GLabel 4000 1750 2    50   Input ~ 0
 SCL
-Text GLabel 6650 3000 2    50   Input ~ 0
+Text GLabel 4000 1650 2    50   Input ~ 0
 SDA
 Wire Wire Line
-	6500 3000 6650 3000
+	3850 1650 4000 1650
 Wire Wire Line
-	7000 2600 7150 2600
+	4350 1250 4500 1250
 $Comp
 L Switch:SW_MEC_5G SW1
 U 1 1 619D98CD
-P 6800 2600
-F 0 "SW1" H 6800 2885 50  0000 C CNN
-F 1 "SW_MEC_5G" H 6800 2794 50  0000 C CNN
-F 2 "" H 6800 2800 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6800 2800 50  0001 C CNN
-	1    6800 2600
+P 4150 1250
+F 0 "SW1" H 4150 1535 50  0000 C CNN
+F 1 "SW_MEC_5G" H 4150 1444 50  0000 C CNN
+F 2 "" H 4150 1450 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 4150 1450 50  0001 C CNN
+	1    4150 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 2600 6600 2600
+	3850 1250 3950 1250
 $Comp
 L power:GND #PWR02
 U 1 1 61A04BEB
-P 7150 2600
-F 0 "#PWR02" H 7150 2350 50  0001 C CNN
-F 1 "GND" H 7155 2427 50  0000 C CNN
-F 2 "" H 7150 2600 50  0001 C CNN
-F 3 "" H 7150 2600 50  0001 C CNN
-	1    7150 2600
+P 4500 1250
+F 0 "#PWR02" H 4500 1000 50  0001 C CNN
+F 1 "GND" H 4505 1077 50  0000 C CNN
+F 2 "" H 4500 1250 50  0001 C CNN
+F 3 "" H 4500 1250 50  0001 C CNN
+	1    4500 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 5000 3550 5000
-Text GLabel 6650 3900 2    50   Input ~ 0
+	1000 3650 900  3650
+Text GLabel 4000 2550 2    50   Input ~ 0
 D+
 Wire Wire Line
-	6500 3900 6650 3900
-Text GLabel 6650 4000 2    50   Input ~ 0
+	3850 2550 4000 2550
+Text GLabel 4000 2650 2    50   Input ~ 0
 D-
 Wire Wire Line
-	6500 4000 6650 4000
+	3850 2650 4000 2650
 Wire Wire Line
-	6500 3700 6650 3700
-Text GLabel 6650 3700 2    50   Input ~ 0
+	3850 2350 4000 2350
+Text GLabel 4000 2350 2    50   Input ~ 0
 OTG
 $Sheet
-S 9600 600  1450 650 
+S 5000 750  1450 650 
 U 61A2F8E2
 F0 "Power" 50
 F1 "Power.sch" 50
 $EndSheet
-NoConn ~ 6500 5050
-NoConn ~ 6500 4850
-NoConn ~ 6500 4750
-NoConn ~ 6500 4500
-NoConn ~ 6500 4400
-NoConn ~ 6500 4300
-NoConn ~ 6500 4200
-NoConn ~ 6500 3600
-NoConn ~ 6500 3300
-NoConn ~ 6500 2900
-NoConn ~ 6500 2800
-NoConn ~ 6500 2700
-NoConn ~ 6500 2400
-NoConn ~ 6500 2300
-NoConn ~ 3650 2300
-NoConn ~ 3650 2600
-NoConn ~ 3650 2700
-NoConn ~ 3650 2800
-NoConn ~ 3650 2900
-NoConn ~ 3650 3000
-NoConn ~ 3650 3100
-NoConn ~ 3650 3200
-NoConn ~ 3650 3300
-NoConn ~ 3650 3400
-NoConn ~ 3650 3500
-NoConn ~ 3650 3600
-NoConn ~ 3650 3700
-NoConn ~ 3650 3800
-NoConn ~ 3650 3900
-NoConn ~ 3650 4300
-NoConn ~ 3650 4550
-Wire Wire Line
-	6500 5150 6550 5150
+NoConn ~ 3850 3700
+NoConn ~ 3850 3500
+NoConn ~ 3850 3400
+NoConn ~ 3850 3150
+NoConn ~ 3850 3050
+NoConn ~ 3850 2950
+NoConn ~ 3850 2850
+NoConn ~ 3850 2250
+NoConn ~ 3850 1950
+NoConn ~ 3850 1550
+NoConn ~ 3850 1450
+NoConn ~ 3850 1350
+NoConn ~ 3850 1050
+NoConn ~ 3850 950 
+NoConn ~ 1000 950 
+NoConn ~ 1000 1250
+NoConn ~ 1000 1350
+NoConn ~ 1000 1450
+NoConn ~ 1000 1550
+NoConn ~ 1000 1650
+NoConn ~ 1000 1750
+NoConn ~ 1000 1850
+NoConn ~ 1000 1950
+NoConn ~ 1000 2050
+NoConn ~ 1000 2150
+NoConn ~ 1000 2250
+NoConn ~ 1000 2350
+NoConn ~ 1000 2450
+NoConn ~ 1000 2550
+NoConn ~ 1000 2950
+NoConn ~ 1000 3200
 $Sheet
-S 9600 1500 1450 650 
+S 5000 1650 1450 650 
 U 61A1DC3C
 F0 "Peripherals" 50
 F1 "Peripherals.sch" 50
@@ -150,14 +148,16 @@ ESP32 Schematic
 $Comp
 L power:+3V3 #PWR06
 U 1 1 61A18D2A
-P 3550 5000
-F 0 "#PWR06" H 3550 4850 50  0001 C CNN
-F 1 "+3V3" V 3565 5128 50  0000 L CNN
-F 2 "" H 3550 5000 50  0001 C CNN
-F 3 "" H 3550 5000 50  0001 C CNN
-	1    3550 5000
+P 900 3650
+F 0 "#PWR06" H 900 3500 50  0001 C CNN
+F 1 "+3V3" V 915 3778 50  0000 L CNN
+F 2 "" H 900 3650 50  0001 C CNN
+F 3 "" H 900 3650 50  0001 C CNN
+	1    900  3650
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6550 5150 2    50   Input ~ 0
+Text GLabel 4000 3800 2    50   Input ~ 0
 DAC_SIGNAL
+Wire Wire Line
+	3850 3800 4000 3800
 $EndSCHEMATC
