@@ -107,15 +107,12 @@ $EndSheet
 NoConn ~ 5750 4950
 NoConn ~ 5750 4750
 NoConn ~ 5750 4650
-NoConn ~ 5750 2500
 NoConn ~ 5750 4300
 NoConn ~ 5750 4200
 NoConn ~ 5750 4100
 NoConn ~ 5750 3500
 NoConn ~ 5750 3200
 NoConn ~ 5750 2800
-NoConn ~ 5750 2700
-NoConn ~ 5750 2600
 NoConn ~ 5750 2300
 NoConn ~ 5750 2200
 NoConn ~ 2900 2500
@@ -217,11 +214,73 @@ $EndComp
 Wire Notes Line
 	8950 750  10950 750 
 Wire Notes Line
-	10950 750  10950 2750
-Wire Notes Line
 	10950 2750 8950 2750
-Wire Notes Line
-	8950 2750 8950 750 
 Text Notes 9000 2700 0    118  ~ 0
 SCD-41
+$Comp
+L Samacs:APTF1616SURKCGKSYKC LED?
+U 1 1 61AF43CE
+P 9200 4050
+F 0 "LED?" H 9875 4315 50  0000 C CNN
+F 1 "APTF1616SURKCGKSYKC" H 9875 4224 50  0000 C CNN
+F 2 "KPTF1616RGBC11" H 10950 4150 50  0001 L CNN
+F 3 "" H 9150 3850 50  0001 L CNN
+F 4 "Standard LEDs - SMD RGY 1616 SMD" H 11150 3850 50  0001 L CNN "Description"
+F 5 "0.9" H 11150 3750 50  0001 L CNN "Height"
+F 6 "604-APTF1616KCGKSYKC" H 11150 3650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Kingbright/APTF1616SURKCGKSYKC?qs=FESYatJ8odK7UleJtP4p0g%3D%3D" H 11350 3550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kingbright" H 11350 3450 50  0001 L CNN "Manufacturer_Name"
+F 9 "APTF1616SURKCGKSYKC" H 11350 3350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9200 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 4950 0    118  ~ 0
+LED 
+Wire Notes Line
+	8950 2750 8950 750 
+Wire Notes Line
+	10950 750  10950 2750
+Wire Notes Line
+	11100 5000 11100 3450
+Wire Notes Line
+	8150 3450 8150 5000
+Wire Wire Line
+	5750 2600 5900 2600
+Text GLabel 5900 2600 2    50   Input ~ 0
+CATHODE_G
+Text GLabel 5900 2500 2    50   Input ~ 0
+CATHODE_R
+Wire Wire Line
+	5750 2500 5900 2500
+Wire Wire Line
+	5750 2700 5900 2700
+Text GLabel 5900 2700 2    50   Input ~ 0
+CATHODE_Y
+Wire Wire Line
+	9000 4150 8850 4150
+Text GLabel 8850 4150 0    50   Input ~ 0
+CATHODE_G
+Text GLabel 8850 4050 0    50   Input ~ 0
+CATHODE_R
+Wire Wire Line
+	9000 4050 8850 4050
+Wire Wire Line
+	9000 4250 8850 4250
+Text GLabel 8850 4250 0    50   Input ~ 0
+CATHODE_Y
+$Comp
+L power:GND #PWR?
+U 1 1 61AFFCA4
+P 10750 4150
+F 0 "#PWR?" H 10750 3900 50  0001 C CNN
+F 1 "GND" H 10755 3977 50  0000 C CNN
+F 2 "" H 10750 4150 50  0001 C CNN
+F 3 "" H 10750 4150 50  0001 C CNN
+	1    10750 4150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8150 3450 11100 3450
+Wire Notes Line
+	8150 5000 11100 5000
 $EndSCHEMATC

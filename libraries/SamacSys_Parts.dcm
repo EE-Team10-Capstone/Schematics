@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP APTF1616SURKCGKSYKC
+D Standard LEDs - SMD RGY 1616 SMD
+$ENDCMP
+#
 $CMP HDSP-4832
 D Avago Light Bar Array Green/Red/Yellow LED Display, 1900 (Green) ??cd, 1900 (Yellow) ??cd, 3500 (Red) ??cd
 F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-6/DSA-115790.pdf
