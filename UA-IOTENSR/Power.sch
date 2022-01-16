@@ -563,4 +563,15 @@ Text GLabel 3150 1900 0    50   Input ~ 0
 BAT-
 Text GLabel 4800 3950 0    50   Input ~ 0
 BAT+
+$Comp
+L power:+5V #PWR?
+U 1 1 61E81B19
+P 5750 1300
+F 0 "#PWR?" H 5750 1150 50  0001 C CNN
+F 1 "+5V" H 5765 1473 50  0000 C CNN
+F 2 "" H 5750 1300 50  0001 C CNN
+F 3 "" H 5750 1300 50  0001 C CNN
+	1    5750 1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
