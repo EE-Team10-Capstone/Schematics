@@ -206,10 +206,6 @@ F 9 "BQ2000TPN-B5" H 5700 2100 50  0001 L CNN "Manufacturer_Part_Number"
 	1    4850 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 2200 5550 2200
-Wire Wire Line
-	4300 2200 4150 2200
 $Comp
 L Device:C C203
 U 1 1 61E48DB8
@@ -222,13 +218,7 @@ F 3 "~" H 4850 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5000 1800 5550 1800
-Wire Wire Line
-	4150 1800 4700 1800
-Wire Wire Line
-	4150 1800 4150 2200
-Wire Wire Line
-	5550 1800 5550 2200
+	5000 1800 5400 1800
 $Comp
 L Device:C C205
 U 1 1 61E4BE8D
@@ -243,7 +233,6 @@ $EndComp
 Connection ~ 5750 2500
 Wire Wire Line
 	2500 2200 3700 2200
-Connection ~ 4150 2200
 Wire Wire Line
 	2500 2200 2500 2400
 $Comp
@@ -306,16 +295,14 @@ $Comp
 L Device:C C202
 U 1 1 61E55DC2
 P 3700 2350
-F 0 "C202" H 3815 2396 50  0000 L CNN
-F 1 "C" H 3815 2305 50  0000 L CNN
+F 0 "C202" H 3400 2400 50  0000 L CNN
+F 1 "C" H 3400 2300 50  0000 L CNN
 F 2 "" H 3738 2200 50  0001 C CNN
 F 3 "~" H 3700 2350 50  0001 C CNN
 	1    3700 2350
 	1    0    0    -1  
 $EndComp
 Connection ~ 3700 2200
-Wire Wire Line
-	3700 2200 4150 2200
 Connection ~ 3700 2500
 Wire Wire Line
 	3700 2500 4300 2500
@@ -621,4 +608,22 @@ F 3 "" H 5700 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5700 3400
+Wire Wire Line
+	7700 1000 7600 1000
+Connection ~ 7700 1000
+Wire Wire Line
+	7700 900  7600 900 
+Text GLabel 7600 900  0    50   Input ~ 0
+BAT+
+Text GLabel 7600 1000 0    50   Input ~ 0
+BAT-
+Wire Wire Line
+	5400 2200 5400 1800
+Wire Wire Line
+	3700 2200 4300 2200
+Wire Wire Line
+	4300 2200 4300 1800
+Connection ~ 4300 2200
+Wire Wire Line
+	4300 1800 4700 1800
 $EndSCHEMATC
