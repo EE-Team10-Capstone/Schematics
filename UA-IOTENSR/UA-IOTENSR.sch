@@ -13,143 +13,30 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR0102
-U 1 1 61961638
-P 2800 5450
-F 0 "#PWR0102" H 2800 5200 50  0001 C CNN
-F 1 "GND" H 2805 5277 50  0000 C CNN
-F 2 "" H 2800 5450 50  0001 C CNN
-F 3 "" H 2800 5450 50  0001 C CNN
-	1    2800 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2800 5250 2900 5250
-Wire Wire Line
-	2800 5350 2900 5350
-Wire Wire Line
-	2800 5450 2900 5450
-$Comp
-L Espressif:ESP32-S2-WROOM U101
-U 1 1 619E5D94
-P 4300 3800
-F 0 "U101" H 4325 5715 50  0000 C CNN
-F 1 "ESP32-S2-WROOM" H 4325 5624 50  0000 C CNN
-F 2 "Espressif:ESP32-S2-WROOM" H 4300 1900 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf" H 4300 3800 50  0001 C CNN
-	1    4300 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 5150 2800 5150
-Wire Wire Line
-	2800 5150 2800 5250
-Connection ~ 2800 5250
-Wire Wire Line
-	2800 5250 2800 5350
-Connection ~ 2800 5350
-Wire Wire Line
-	2800 5350 2800 5450
-Connection ~ 2800 5450
-Wire Wire Line
-	5750 3000 5900 3000
-Text GLabel 5900 3000 2    50   Input ~ 0
+	1700 3350 1550 3350
+Text GLabel 1550 3350 0    50   Input ~ 0
 SCL
-Text GLabel 5900 2900 2    50   Input ~ 0
+Text GLabel 1550 3450 0    50   Input ~ 0
 SDA
 Wire Wire Line
-	5750 2900 5900 2900
-Wire Wire Line
-	6250 4400 6400 4400
-$Comp
-L Switch:SW_MEC_5G SW101
-U 1 1 619D98CD
-P 6050 4400
-F 0 "SW101" H 6050 4685 50  0000 C CNN
-F 1 "SW_MEC_5G" H 6050 4594 50  0000 C CNN
-F 2 "" H 6050 4600 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6050 4600 50  0001 C CNN
-	1    6050 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 4400 5850 4400
-$Comp
-L power:GND #PWR0103
-U 1 1 61A04BEB
-P 6400 4400
-F 0 "#PWR0103" H 6400 4150 50  0001 C CNN
-F 1 "GND" H 6405 4227 50  0000 C CNN
-F 2 "" H 6400 4400 50  0001 C CNN
-F 3 "" H 6400 4400 50  0001 C CNN
-	1    6400 4400
-	1    0    0    -1  
-$EndComp
-Text GLabel 5900 3800 2    50   Input ~ 0
+	1700 3450 1550 3450
+Text GLabel 6500 1400 2    50   Input ~ 0
 D+
 Wire Wire Line
-	5750 3800 5900 3800
-Text GLabel 5900 3900 2    50   Input ~ 0
+	6350 1400 6500 1400
+Text GLabel 6500 1500 2    50   Input ~ 0
 D-
 Wire Wire Line
-	5750 3900 5900 3900
-Wire Wire Line
-	5750 3600 5900 3600
-Text GLabel 5900 3600 2    50   Input ~ 0
-OTG
+	6350 1500 6500 1500
 $Sheet
-S 900  4850 1450 650 
+S 1800 4550 1450 650 
 U 61A2F8E2
 F0 "Power" 50
 F1 "Power.sch" 50
 $EndSheet
-NoConn ~ 5750 4950
-NoConn ~ 5750 4750
-NoConn ~ 5750 4650
-NoConn ~ 5750 4300
-NoConn ~ 5750 4200
-NoConn ~ 5750 4100
-NoConn ~ 5750 3500
-NoConn ~ 5750 3200
-NoConn ~ 5750 2800
-NoConn ~ 5750 2300
-NoConn ~ 5750 2200
-NoConn ~ 2900 2500
-NoConn ~ 2900 2600
-NoConn ~ 2900 2700
-NoConn ~ 2900 2800
-NoConn ~ 2900 2900
-NoConn ~ 2900 3000
-NoConn ~ 2900 3100
-NoConn ~ 2900 3200
-NoConn ~ 2900 3300
-NoConn ~ 2900 3400
-NoConn ~ 2900 3500
-NoConn ~ 2900 3600
-NoConn ~ 2900 3700
-NoConn ~ 2900 3800
-NoConn ~ 2900 4200
-NoConn ~ 2900 4450
 Text Notes 7000 7000 0    236  ~ 0
 ESP32 Schematic
-$Comp
-L power:+3V3 #PWR0101
-U 1 1 61A18D2A
-P 2650 2200
-F 0 "#PWR0101" H 2650 2050 50  0001 C CNN
-F 1 "+3V3" V 2665 2328 50  0000 L CNN
-F 2 "" H 2650 2200 50  0001 C CNN
-F 3 "" H 2650 2200 50  0001 C CNN
-	1    2650 2200
-	1    0    0    -1  
-$EndComp
-Text GLabel 5900 5050 2    50   Input ~ 0
-DAC_SIGNAL
-Wire Wire Line
-	5750 5050 5900 5050
-Wire Wire Line
-	2900 2200 2650 2200
 $Comp
 L SCD4X:SCD4X U102
 U 1 1 61B02C43
@@ -158,7 +45,7 @@ AR Path="/61B02C43" Ref="U102"  Part="1"
 AR Path="/61A1DC3C/61B02C43" Ref="U?"  Part="1" 
 F 0 "U102" H 9900 1915 50  0000 C CNN
 F 1 "SCD4X" H 9900 1824 50  0000 C CNN
-F 2 "" H 9900 1900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9900 1900 50  0001 C CNN
 F 3 "" H 9900 1900 50  0001 C CNN
 	1    9900 1450
 	1    0    0    -1  
@@ -223,7 +110,7 @@ U 1 1 61AF43CE
 P 9200 4050
 F 0 "LED101" H 9875 4315 50  0000 C CNN
 F 1 "APTF1616SURKCGKSYKC" H 9875 4224 50  0000 C CNN
-F 2 "KPTF1616RGBC11" H 10950 4150 50  0001 L CNN
+F 2 "SamacSys_Parts:KPTF1616RGBC11" H 10950 4150 50  0001 L CNN
 F 3 "" H 9150 3850 50  0001 L CNN
 F 4 "Standard LEDs - SMD RGY 1616 SMD" H 11150 3850 50  0001 L CNN "Description"
 F 5 "0.9" H 11150 3750 50  0001 L CNN "Height"
@@ -245,16 +132,16 @@ Wire Notes Line
 Wire Notes Line
 	8150 3450 8150 5000
 Wire Wire Line
-	5750 2600 5900 2600
-Text GLabel 5900 2600 2    50   Input ~ 0
+	6350 1950 6500 1950
+Text GLabel 6500 1950 2    50   Input ~ 0
 CATHODE_G
-Text GLabel 5900 2500 2    50   Input ~ 0
+Text GLabel 6500 1850 2    50   Input ~ 0
 CATHODE_R
 Wire Wire Line
-	5750 2500 5900 2500
+	6350 1850 6500 1850
 Wire Wire Line
-	5750 2700 5900 2700
-Text GLabel 5900 2700 2    50   Input ~ 0
+	6350 2050 6500 2050
+Text GLabel 6500 2050 2    50   Input ~ 0
 CATHODE_Y
 Wire Wire Line
 	9000 4150 8850 4150
@@ -283,4 +170,148 @@ Wire Notes Line
 	8150 3450 11100 3450
 Wire Notes Line
 	8150 5000 11100 5000
+Wire Wire Line
+	7000 2450 7100 2450
+Wire Wire Line
+	6350 2150 7000 2150
+Wire Wire Line
+	6350 3600 6500 3600
+Wire Wire Line
+	6500 3600 6500 3700
+Wire Wire Line
+	6500 4000 6350 4000
+Wire Wire Line
+	6350 3900 6500 3900
+Connection ~ 6500 3900
+Wire Wire Line
+	6500 3900 6500 4000
+Wire Wire Line
+	6350 3800 6500 3800
+Connection ~ 6500 3800
+Wire Wire Line
+	6500 3800 6500 3900
+Wire Wire Line
+	6350 3700 6500 3700
+Connection ~ 6500 3700
+Wire Wire Line
+	6500 3700 6500 3800
+Wire Wire Line
+	6500 4000 6500 4150
+Connection ~ 6500 4000
+$Comp
+L power:GND #PWR0101
+U 1 1 62086CA7
+P 6500 4150
+F 0 "#PWR0101" H 6500 3900 50  0001 C CNN
+F 1 "GND" H 6505 3977 50  0000 C CNN
+F 2 "" H 6500 4150 50  0001 C CNN
+F 3 "" H 6500 4150 50  0001 C CNN
+	1    6500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 6208B06F
+P 1500 1300
+F 0 "#PWR0102" H 1500 1150 50  0001 C CNN
+F 1 "+3V3" H 1515 1473 50  0000 C CNN
+F 2 "" H 1500 1300 50  0001 C CNN
+F 3 "" H 1500 1300 50  0001 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1600 1500 1600
+Wire Wire Line
+	1500 1600 1500 1300
+$Comp
+L Espressif:ESP32-S3-MINI-1 U1
+U 1 1 6205E07D
+P 4050 2650
+F 0 "U1" H 4025 4165 50  0000 C CNN
+F 1 "ESP32-S3-MINI-1" H 4025 4074 50  0000 C CNN
+F 2 "Espressif:ESP32-S3-MINI-1" H 4050 1000 50  0001 C CNN
+F 3 "" H 4050 2950 50  0001 C CNN
+	1    4050 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1700 1500
+NoConn ~ 1700 1750
+NoConn ~ 1700 1850
+NoConn ~ 1700 1950
+NoConn ~ 1700 2050
+NoConn ~ 1700 2150
+NoConn ~ 1700 2250
+NoConn ~ 1700 2350
+NoConn ~ 1700 2450
+NoConn ~ 1700 2550
+NoConn ~ 1700 2650
+NoConn ~ 1700 2750
+NoConn ~ 1700 2850
+NoConn ~ 1700 2950
+NoConn ~ 1700 3050
+NoConn ~ 1700 3150
+NoConn ~ 1700 3250
+Connection ~ 1700 3800
+Wire Wire Line
+	1700 3800 1800 3800
+Wire Wire Line
+	1250 3800 1700 3800
+Wire Wire Line
+	1250 3800 1250 1600
+Wire Wire Line
+	1250 1600 1500 1600
+Connection ~ 1500 1600
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 620C5E9D
+P 7300 2450
+F 0 "SW1" H 7300 2775 50  0000 C CNN
+F 1 "SW_DPST" H 7300 2684 50  0000 C CNN
+F 2 "SamacSys_Parts2:PB400EEQR1BLK" H 7300 2450 50  0001 C CNN
+F 3 "~" H 7300 2450 50  0001 C CNN
+	1    7300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2550 7100 2450
+Wire Wire Line
+	7500 2550 7500 2450
+Wire Wire Line
+	7500 2450 7650 2450
+Wire Wire Line
+	7650 2450 7650 2550
+Connection ~ 7500 2450
+Wire Wire Line
+	7500 2450 7500 2350
+Connection ~ 7100 2450
+Wire Wire Line
+	7100 2450 7100 2350
+Wire Wire Line
+	7000 2150 7000 2450
+$Comp
+L power:GND #PWR0103
+U 1 1 620D10AA
+P 7650 2550
+F 0 "#PWR0103" H 7650 2300 50  0001 C CNN
+F 1 "GND" H 7655 2377 50  0000 C CNN
+F 2 "" H 7650 2550 50  0001 C CNN
+F 3 "" H 7650 2550 50  0001 C CNN
+	1    7650 2550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6350 3400
+NoConn ~ 6350 3300
+NoConn ~ 6350 3200
+NoConn ~ 6350 3100
+NoConn ~ 6350 2950
+NoConn ~ 6350 2850
+NoConn ~ 6350 2750
+NoConn ~ 6350 2650
+NoConn ~ 6350 2550
+NoConn ~ 6350 2450
+NoConn ~ 6350 2350
+NoConn ~ 6350 2250
+NoConn ~ 6350 1750
+NoConn ~ 6350 1650
 $EndSCHEMATC
