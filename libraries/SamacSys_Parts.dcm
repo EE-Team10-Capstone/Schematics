@@ -34,4 +34,16 @@ D Micro-AB USB Receptacle, SMT
 F https://componentsearchengine.com/Datasheets/1/ZX62-AB-5PA(31).pdf
 $ENDCMP
 #
+$CMP CMP1206AFX-2200ELF
+D Thick Film Resistors - SMD 220   OHM   1% 3/4W TC100
+K
+F https://www.bourns.com/docs/Product-Datasheets/CMP-A.pdf
+$ENDCMP
+#
+$CMP CRM2512-FX-R050ELF
+D BOURNS - CRM2512-FX-R050ELF - CURRENT SENSE RES, 0R05, 1%, 2W, 2512
+K
+F http://www.bourns.com/data/global/pdfs/CRM0805_1206_2010.pdf
+$ENDCMP
+#
 #End Doc Library
