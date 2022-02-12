@@ -9,4 +9,5 @@
   (lib (name RNCP0805FTD22K1)(type KiCad)(uri ${PRJ_LIBRARY}/RNCP0805FTD22K1)(options "")(descr ""))
   (lib (name footprints)(type KiCad)(uri ${PRJ_LIBRARY}/KiCAD/2021-11-21_01-44-22/footprints.pretty)(options "")(descr ""))
   (lib (name 30u_inductor)(type KiCad)(uri ${PRJ_LIBRARY}/KiCAD/2022-02-11_20-15-37/footprints.pretty)(options "")(descr ""))
+  (lib (name ESP32-S3-MINI-1-N8)(type KiCad)(uri ${PRJ_LIBRARY}/ESP32-S3-MINI-1-N8)(options "")(descr ""))
 )
