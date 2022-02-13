@@ -444,40 +444,8 @@ F 3 "~" H 4650 2700 50  0001 C CNN
 	1    4650 2700
 	0    1    1    0   
 $EndComp
-$Comp
-<<<<<<< Updated upstream
-=======
-L Device:R_US R208
-U 1 1 61E72193
-P 4900 2350
-F 0 "R208" H 4968 2396 50  0000 L CNN
-F 1 "4.8047k" H 4968 2305 50  0000 L CNN
-F 2 "" V 4940 2340 50  0001 C CNN
-F 3 "~" H 4900 2350 50  0001 C CNN
-	1    4900 2350
-	1    0    0    -1  
-$EndComp
-$Comp
->>>>>>> Stashed changes
-L Device:R_US R209
-U 1 1 61E73436
-P 4900 3000
-F 0 "R209" H 4968 3046 50  0000 L CNN
-<<<<<<< Updated upstream
-F 1 "R_T2" H 4968 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4940 2990 50  0001 C CNN
-=======
-F 1 "5.7668k" H 4968 2955 50  0000 L CNN
-F 2 "" V 4940 2990 50  0001 C CNN
->>>>>>> Stashed changes
-F 3 "~" H 4900 3000 50  0001 C CNN
-	1    4900 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4800 2700 4900 2700
-Wire Wire Line
-	4900 2700 4900 2500
 Wire Wire Line
 	4050 2100 4400 2100
 Wire Wire Line
@@ -635,14 +603,27 @@ Wire Wire Line
 Wire Wire Line
 	4900 2200 4900 2100
 $Comp
+L Device:R_US R209
+U 1 1 6209F5C7
+P 4900 3000
+F 0 "R209" H 4968 3046 50  0000 L CNN
+F 1 "5.7668k" H 4968 2955 50  0000 L CNN
+F 2 "" V 4940 2990 50  0001 C CNN
+F 3 "~" H 4900 3000 50  0001 C CNN
+	1    4900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
 L Device:R_US R208
-U 1 1 61E72193
+U 1 1 620A85C3
 P 4900 2350
 F 0 "R208" H 4968 2396 50  0000 L CNN
-F 1 "R_T1" H 4968 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4940 2340 50  0001 C CNN
+F 1 "4.8047k" H 4968 2305 50  0000 L CNN
+F 2 "" V 4940 2340 50  0001 C CNN
 F 3 "~" H 4900 2350 50  0001 C CNN
 	1    4900 2350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4900 2500 4900 2700
 $EndSCHEMATC
