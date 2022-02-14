@@ -39,9 +39,9 @@ Text Notes 7000 7000 0    236  ~ 0
 ESP32 Schematic
 Wire Wire Line
 	9150 1600 9000 1600
-Text GLabel 9000 1600 0    50   Input ~ 0
-SCL
 Text GLabel 8800 1500 0    50   Input ~ 0
+SCL
+Text GLabel 9000 1600 0    50   Input ~ 0
 SDA
 $Comp
 L power:+3V3 #PWR0104
