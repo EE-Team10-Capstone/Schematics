@@ -223,7 +223,6 @@ F 3 "~" H 2300 2700 50  0001 C CNN
 	1    2300 2700
 	0    1    1    0   
 $EndComp
-Connection ~ 1150 2700
 $Comp
 L power:GNDREF #PWR07
 U 1 1 61E529CC
@@ -242,15 +241,14 @@ Wire Wire Line
 $Comp
 L Device:R_US Rsns
 U 1 1 61E54493
-P 1800 2250
-F 0 "Rsns" H 1868 2296 50  0000 L CNN
-F 1 "0.1" H 1868 2205 50  0000 L CNN
-F 2 "SamacSys_Parts:RESC6331X80N" V 1840 2240 50  0001 C CNN
-F 3 "~" H 1800 2250 50  0001 C CNN
-	1    1800 2250
-	1    0    0    -1  
+P 1650 2500
+F 0 "Rsns" H 1718 2546 50  0000 L CNN
+F 1 "0.1" H 1718 2455 50  0000 L CNN
+F 2 "SamacSys_Parts:RESC6331X80N" V 1690 2490 50  0001 C CNN
+F 3 "~" H 1650 2500 50  0001 C CNN
+	1    1650 2500
+	0    -1   -1   0   
 $EndComp
-Connection ~ 1800 2100
 $Comp
 L Device:C Cf
 U 1 1 61E55DC2
@@ -277,8 +275,6 @@ F 3 "" H 2350 2100 50  0001 C CNN
 	1    2350 2100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 2700 1150 2900
 $Comp
 L Device:R_US Rb2
 U 1 1 61E58746
@@ -355,8 +351,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 1050 4400 1050
 Wire Wire Line
-	4400 1050 4400 2100
-Wire Wire Line
 	3250 3450 3450 3450
 $Comp
 L Device:L L1
@@ -420,17 +414,6 @@ Wire Wire Line
 	4900 2700 4900 2850
 Connection ~ 4900 2700
 $Comp
-L power:GNDREF #PWR013
-U 1 1 61E7A638
-P 4900 3150
-F 0 "#PWR013" H 4900 2900 50  0001 C CNN
-F 1 "GNDREF" H 4905 2977 50  0000 C CNN
-F 2 "" H 4900 3150 50  0001 C CNN
-F 3 "" H 4900 3150 50  0001 C CNN
-	1    4900 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Thermistor TH1
 U 1 1 61E7B984
 P 5400 2700
@@ -443,17 +426,6 @@ F 3 "~" H 5400 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4900 2700 5200 2700
-$Comp
-L power:GNDREF #PWR014
-U 1 1 61E7DEA9
-P 5750 2700
-F 0 "#PWR014" H 5750 2450 50  0001 C CNN
-F 1 "GNDREF" H 5755 2527 50  0000 C CNN
-F 2 "" H 5750 2700 50  0001 C CNN
-F 3 "" H 5750 2700 50  0001 C CNN
-	1    5750 2700
-	1    0    0    -1  
-$EndComp
 Text GLabel 4200 3450 2    50   Input ~ 0
 DC+
 Text GLabel 1800 1500 0    50   Input ~ 0
@@ -484,18 +456,6 @@ F 3 "~" H 4350 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 3100 4100 3100
-$Comp
-L power:GNDREF #PWR012
-U 1 1 61E8BC9F
-P 4350 3100
-F 0 "#PWR012" H 4350 2850 50  0001 C CNN
-F 1 "GNDREF" H 4355 2927 50  0000 C CNN
-F 2 "" H 4350 3100 50  0001 C CNN
-F 3 "" H 4350 3100 50  0001 C CNN
-	1    4350 3100
-	1    0    0    -1  
-$EndComp
-Connection ~ 4350 3100
 Wire Wire Line
 	4050 1800 4050 1400
 Wire Wire Line
@@ -506,16 +466,9 @@ Connection ~ 2950 1800
 Wire Wire Line
 	2950 1400 3350 1400
 Wire Wire Line
-	1150 2300 1150 2700
-Wire Wire Line
-	1800 2700 1150 2700
-Wire Wire Line
 	2150 2700 1800 2700
-Connection ~ 1800 2700
 Wire Wire Line
 	1800 2700 1800 2900
-Wire Wire Line
-	1800 2400 1800 2700
 Wire Wire Line
 	4050 2400 4100 2400
 Wire Wire Line
@@ -542,34 +495,17 @@ Wire Wire Line
 Text GLabel 4550 1050 2    50   Input ~ 0
 DC+
 NoConn ~ 3050 6800
-Wire Wire Line
-	4900 2100 4400 2100
-Wire Wire Line
-	4900 2200 4900 2100
 $Comp
-L Device:R_US Rt2
-U 1 1 6209F5C7
+L Device:R_US Rt1
+U 1 1 620A85C3
 P 4900 3000
-F 0 "Rt2" H 4968 3046 50  0000 L CNN
-F 1 "5.7k" H 4968 2955 50  0000 L CNN
+F 0 "Rt1" H 4968 3046 50  0000 L CNN
+F 1 "4.7k" H 4968 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4940 2990 50  0001 C CNN
 F 3 "~" H 4900 3000 50  0001 C CNN
 	1    4900 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US Rt1
-U 1 1 620A85C3
-P 4900 2350
-F 0 "Rt1" H 4968 2396 50  0000 L CNN
-F 1 "4.7k" H 4968 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4940 2340 50  0001 C CNN
-F 3 "~" H 4900 2350 50  0001 C CNN
-	1    4900 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 2500 4900 2700
 $Comp
 L Regulator_Switching:AP63203WU U2
 U 1 1 620AEB9B
@@ -713,9 +649,137 @@ $EndComp
 Wire Wire Line
 	7650 3800 7650 3700
 Wire Wire Line
-	7650 4200 7650 4350
+	7650 4200 7650 4250
 Text GLabel 7650 3700 0    50   Input ~ 0
 BAT+
 Text GLabel 7650 4350 0    50   Input ~ 0
 BAT-
+Wire Wire Line
+	1150 2300 1150 2500
+Connection ~ 1150 2500
+Wire Wire Line
+	1150 2500 1150 2900
+Wire Wire Line
+	1800 2500 1800 2100
+Connection ~ 1800 2100
+Wire Wire Line
+	1150 2500 1500 2500
+$Comp
+L power:GND SignalGND?
+U 1 1 624B40F1
+P 1550 2900
+F 0 "SignalGND?" H 1550 2650 50  0000 C CNN
+F 1 "GND" H 1555 2727 50  0001 C CNN
+F 2 "" H 1550 2900 50  0001 C CNN
+F 3 "" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 2700
+Wire Wire Line
+	1550 2700 1800 2700
+Wire Wire Line
+	1550 2700 1550 2900
+Wire Wire Line
+	5750 2700 5750 1300
+Wire Wire Line
+	5750 1300 4400 1300
+Wire Wire Line
+	4400 1050 4400 1300
+Connection ~ 4400 1300
+Wire Wire Line
+	4400 1300 4400 1450
+$Comp
+L power:GND SignalGND?
+U 1 1 624C105D
+P 4900 3400
+F 0 "SignalGND?" H 4900 3150 50  0000 C CNN
+F 1 "GND" H 4905 3227 50  0001 C CNN
+F 2 "" H 4900 3400 50  0001 C CNN
+F 3 "" H 4900 3400 50  0001 C CNN
+	1    4900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3100 4350 3250
+Wire Wire Line
+	4350 3250 4900 3250
+Wire Wire Line
+	4900 3150 4900 3250
+Connection ~ 4350 3100
+Connection ~ 4900 3250
+Wire Wire Line
+	4900 3250 4900 3400
+$Comp
+L Device:C Bypass_1
+U 1 1 624CCAA1
+P 4550 1450
+F 0 "Bypass_1" H 4665 1496 50  0001 C BNN
+F 1 "10u" H 4665 1405 50  0000 C TNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4588 1300 50  0001 C CNN
+F 3 "~" H 4550 1450 50  0001 C CNN
+	1    4550 1450
+	0    1    1    0   
+$EndComp
+Connection ~ 4400 1450
+Wire Wire Line
+	4400 1450 4400 1900
+$Comp
+L Device:C Bypass_?
+U 1 1 624D22AD
+P 4550 1900
+F 0 "Bypass_?" H 4665 1946 50  0001 C BNN
+F 1 "0.1u" H 4665 1855 50  0000 C TNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4588 1750 50  0001 C CNN
+F 3 "~" H 4550 1900 50  0001 C CNN
+	1    4550 1900
+	0    1    1    0   
+$EndComp
+Connection ~ 4400 1900
+Wire Wire Line
+	4400 1900 4400 2100
+$Comp
+L power:GNDREF #PWR?
+U 1 1 624D3CDF
+P 5100 1700
+F 0 "#PWR?" H 5100 1450 50  0001 C CNN
+F 1 "GNDREF" H 5105 1527 50  0000 C CNN
+F 2 "" H 5100 1700 50  0001 C CNN
+F 3 "" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1450 5100 1450
+Wire Wire Line
+	5100 1450 5100 1700
+Wire Wire Line
+	5100 1900 4700 1900
+Connection ~ 5100 1700
+Wire Wire Line
+	5100 1700 5100 1900
+$Comp
+L Device:C Bypass_?
+U 1 1 624D9D33
+P 7150 4050
+F 0 "Bypass_?" H 7265 4096 50  0001 C BNN
+F 1 "470u" H 7265 4005 50  0000 C TNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7188 3900 50  0001 C CNN
+F 3 "~" H 7150 4050 50  0001 C CNN
+	1    7150 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 3800 7650 3800
+Wire Wire Line
+	7150 3800 7150 3900
+Connection ~ 7650 3800
+Wire Wire Line
+	7150 4200 7650 4200
+Wire Wire Line
+	7650 4200 7650 4250
+Connection ~ 7650 4200
+Connection ~ 7650 4250
+Wire Wire Line
+	7650 4250 7650 4350
 $EndSCHEMATC
