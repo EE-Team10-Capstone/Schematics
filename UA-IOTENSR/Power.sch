@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -13,134 +13,68 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 800  6600 0    50   Input ~ 0
-D+
-Text GLabel 800  6500 0    50   Input ~ 0
-D-
 Wire Wire Line
-	900  6500 800  6500
-Wire Wire Line
-	900  6600 800  6600
-Text GLabel 1400 5800 1    50   Input ~ 0
+	900  5900 850  5900
+Text GLabel 800  5900 0    50   Input ~ 0
 DC+
-Wire Wire Line
-	1400 5900 1400 5800
-$Comp
-L UA-IOTENSR-rescue:PRTR5V0U2X,215-Samacs D?
-U 1 1 61AA5594
-P 900 6500
-AR Path="/61AA5594" Ref="D?"  Part="1" 
-AR Path="/61A2F8E2/61AA5594" Ref="D1"  Part="1" 
-F 0 "D1" H 1728 6496 50  0000 L CNN
-F 1 "PRTR5V0U2X,215" H 1728 6405 50  0000 L CNN
-F 2 "SamacSys_Parts:PRTR5V0U2X" H 1750 6900 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 1750 6800 50  0001 L CNN
-F 4 "ESD Protection Diodes 5.5V Dual SOT143B NXP PRTR5V0U2X,215 Dual Uni-Directional TVS Diode, 4-Pin SOT-143B" H 1750 6700 50  0001 L CNN "Description"
-F 5 "1.1" H 1750 6600 50  0001 L CNN "Height"
-F 6 "771-PRTR5V0U2X-T/R" H 1750 6500 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Nexperia/PRTR5V0U2X215?qs=LOCUfHb8d9sDkgY4cRj8Lw%3D%3D" H 1750 6400 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Nexperia" H 1750 6300 50  0001 L CNN "Manufacturer_Name"
-F 9 "PRTR5V0U2X,215" H 1750 6200 50  0001 L CNN "Manufacturer_Part_Number"
-	1    900  6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61AA55B9
-P 1400 7350
-AR Path="/61AA55B9" Ref="#PWR?"  Part="1" 
-AR Path="/61A2F8E2/61AA55B9" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 1400 7100 50  0001 C CNN
-F 1 "GND" H 1405 7177 50  0000 C CNN
-F 2 "" H 1400 7350 50  0001 C CNN
-F 3 "" H 1400 7350 50  0001 C CNN
-	1    1400 7350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 6350 3000 6350
-Text GLabel 2950 6350 0    50   Input ~ 0
-DC+
-Text GLabel 2950 6650 0    50   Input ~ 0
-D+
-Wire Wire Line
-	3050 6650 2950 6650
-Text GLabel 2950 6500 0    50   Input ~ 0
-D-
-Wire Wire Line
-	3050 6500 2950 6500
 $Comp
 L UA-IOTENSR-rescue:ZX62-AB-5PA_31_-Samacs J?
 U 1 1 61AE2D99
-P 3050 6400
+P 900 5950
 AR Path="/61AE2D99" Ref="J?"  Part="1" 
 AR Path="/61A2F8E2/61AE2D99" Ref="J2"  Part="1" 
-F 0 "J2" H 3550 6675 50  0000 C CNN
-F 1 "ZX62-AB-5PA_31_" H 3550 6584 50  0000 C CNN
-F 2 "SamacSys_Parts:ZX62AB5PA31" H 4500 6450 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/ZX62-AB-5PA(31).pdf" H 4500 6350 50  0001 L CNN
-F 4 "Micro-AB USB Receptacle, SMT" H 4500 6250 50  0001 L CNN "Description"
-F 5 "2.8" H 3900 6150 50  0001 L CNN "Height"
-F 6 "798-ZX62-AB-5PA31" H 4500 6050 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62-AB-5PA31?qs=4J5DPWWS9ECs22kuZOYOxg%3D%3D" H 4500 5950 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Hirose" H 3900 5800 50  0001 L CNN "Manufacturer_Name"
-F 9 "ZX62-AB-5PA(31)" H 4500 5800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3050 6400
+F 0 "J2" H 1400 6225 50  0000 C CNN
+F 1 "ZX62-AB-5PA_31_" H 1400 6134 50  0000 C CNN
+F 2 "SamacSys_Parts:ZX62AB5PA31" H 2350 6000 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/ZX62-AB-5PA(31).pdf" H 2350 5900 50  0001 L CNN
+F 4 "Micro-AB USB Receptacle, SMT" H 2350 5800 50  0001 L CNN "Description"
+F 5 "2.8" H 1750 5700 50  0001 L CNN "Height"
+F 6 "798-ZX62-AB-5PA31" H 2350 5600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/ZX62-AB-5PA31?qs=4J5DPWWS9ECs22kuZOYOxg%3D%3D" H 2350 5500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Hirose" H 1750 5350 50  0001 L CNN "Manufacturer_Name"
+F 9 "ZX62-AB-5PA(31)" H 2350 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    900  5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 6400 4050 6500
-Connection ~ 4050 6500
+	1900 5950 1900 6050
+Connection ~ 1900 6050
 Wire Wire Line
-	4050 6500 4050 6600
-Connection ~ 4050 6600
+	1900 6050 1900 6150
+Connection ~ 1900 6150
 Wire Wire Line
-	4050 6600 4050 6700
-Connection ~ 4050 6700
+	1900 6150 1900 6250
+Connection ~ 1900 6250
 Wire Wire Line
-	4050 6700 4050 6800
-Connection ~ 4050 6800
+	1900 6250 1900 6350
+Connection ~ 1900 6350
 Wire Wire Line
-	4050 6800 4050 6900
-Connection ~ 4050 6900
+	1900 6350 1900 6450
+Connection ~ 1900 6450
 Wire Wire Line
-	4050 6900 4050 7200
+	1900 6450 1900 6750
 Wire Wire Line
-	1400 7200 1400 7350
-Connection ~ 1400 7200
+	900  6500 900  6750
 Wire Wire Line
-	3050 6950 3050 7200
+	900  6750 1900 6750
 Wire Wire Line
-	1400 7200 3050 7200
-Connection ~ 3050 7200
-Wire Wire Line
-	3050 7200 4050 7200
-Wire Wire Line
-	3000 6350 3000 6200
+	850  5900 850  5750
 $Comp
 L power:+5V #PWR010
 U 1 1 61A0D4E4
-P 3000 6200
-F 0 "#PWR010" H 3000 6050 50  0001 C CNN
-F 1 "+5V" H 3015 6373 50  0000 C CNN
-F 2 "" H 3000 6200 50  0001 C CNN
-F 3 "" H 3000 6200 50  0001 C CNN
-	1    3000 6200
+P 850 5750
+F 0 "#PWR010" H 850 5600 50  0001 C CNN
+F 1 "+5V" H 865 5923 50  0000 C CNN
+F 2 "" H 850 5750 50  0001 C CNN
+F 3 "" H 850 5750 50  0001 C CNN
+	1    850  5750
 	1    0    0    -1  
 $EndComp
-Connection ~ 3000 6350
+Connection ~ 850  5900
 Wire Wire Line
-	3000 6350 2950 6350
-Wire Notes Line
-	500  5500 5000 5500
-Wire Notes Line
-	5000 5500 5000 7750
-Wire Notes Line
-	5000 7750 500  7750
-Wire Notes Line
-	500  7750 500  5500
-Text Notes 550  7700 0    118  ~ 0
-MicroUSB HEADER and TVS DIODE ARRAY IC 
+	850  5900 800  5900
+Text Notes 550  7100 0    118  ~ 0
+MicroUSB HEADER
 Wire Notes Line
 	500  500  10000 500 
 Wire Notes Line
@@ -171,10 +105,10 @@ F 9 "BQ2000TPN-B5" H 4350 1700 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C Chys
+L Device:C Chys1
 U 1 1 61E48DB8
 P 3500 1400
-F 0 "Chys" V 3248 1400 50  0000 C CNN
+F 0 "Chys1" V 3248 1400 50  0000 C CNN
 F 1 "4.7p" V 3339 1400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3538 1250 50  0001 C CNN
 F 3 "~" H 3500 1400 50  0001 C CNN
@@ -184,10 +118,10 @@ $EndComp
 Wire Wire Line
 	3650 1400 4050 1400
 $Comp
-L Device:C Cmto
+L Device:C Cmto1
 U 1 1 61E4BE8D
 P 4400 2250
-F 0 "Cmto" H 4515 2296 50  0000 L CNN
+F 0 "Cmto1" H 4515 2296 50  0000 L CNN
 F 1 "0.22u" H 4515 2205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4438 2100 50  0001 C CNN
 F 3 "~" H 4400 2250 50  0001 C CNN
@@ -200,10 +134,10 @@ Wire Wire Line
 Wire Wire Line
 	1150 1800 1150 2000
 $Comp
-L Device:R_US Rf
+L Device:R_US Rf1
 U 1 1 61E4F5EE
 P 1150 2150
-F 0 "Rf" H 1218 2196 50  0000 L CNN
+F 0 "Rf1" H 1218 2196 50  0000 L CNN
 F 1 "1.1k" H 1218 2105 50  0000 L CNN
 F 2 "SamacSys_Parts:ERA8A__0805_" V 1190 2140 50  0001 C CNN
 F 3 "~" H 1150 2150 50  0001 C CNN
@@ -239,10 +173,10 @@ Wire Wire Line
 Wire Wire Line
 	1800 2100 1800 1500
 $Comp
-L Device:R_US Rsns
+L Device:R_US Rsns1
 U 1 1 61E54493
 P 1650 2500
-F 0 "Rsns" H 1718 2546 50  0000 L CNN
+F 0 "Rsns1" H 1718 2546 50  0000 L CNN
 F 1 "0.1" H 1718 2455 50  0000 L CNN
 F 2 "SamacSys_Parts:RESC6331X80N" V 1690 2490 50  0001 C CNN
 F 3 "~" H 1650 2500 50  0001 C CNN
@@ -250,10 +184,10 @@ F 3 "~" H 1650 2500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C Cf
+L Device:C Cf1
 U 1 1 61E55DC2
 P 2350 1950
-F 0 "Cf" H 2050 2000 50  0000 L CNN
+F 0 "Cf1" H 2050 2000 50  0000 L CNN
 F 1 "2200p" H 2050 1900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2388 1800 50  0001 C CNN
 F 3 "~" H 2350 1950 50  0001 C CNN
@@ -265,10 +199,10 @@ Connection ~ 2350 2100
 Wire Wire Line
 	2350 2100 2950 2100
 $Comp
-L power:GND SignalGND
+L power:GND #SignalGND02
 U 1 1 61E56BD7
 P 2350 2100
-F 0 "SignalGND" H 2350 1850 50  0000 C CNN
+F 0 "#SignalGND02" H 2350 1850 50  0000 C CNN
 F 1 "GND" H 2355 1927 50  0001 C CNN
 F 2 "" H 2350 2100 50  0001 C CNN
 F 3 "" H 2350 2100 50  0001 C CNN
@@ -336,10 +270,10 @@ Wire Wire Line
 Wire Wire Line
 	2600 1550 2600 2400
 $Comp
-L Device:R_US Rled
+L Device:R_US Rled1
 U 1 1 61E65328
 P 3500 1050
-F 0 "Rled" V 3295 1050 50  0000 C CNN
+F 0 "Rled1" V 3295 1050 50  0000 C CNN
 F 1 "220" V 3386 1050 50  0000 C CNN
 F 2 "SamacSys_Parts:RESC3116X65N" V 3540 1040 50  0001 C CNN
 F 3 "~" H 3500 1050 50  0001 C CNN
@@ -366,10 +300,10 @@ $EndComp
 Wire Wire Line
 	3900 3450 4050 3450
 $Comp
-L Device:C Cp
+L Device:C Cp1
 U 1 1 61E6B59F
 P 4050 3600
-F 0 "Cp" H 4165 3646 50  0000 L CNN
+F 0 "Cp1" H 4165 3646 50  0000 L CNN
 F 1 "470u" H 4165 3555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4088 3450 50  0001 C CNN
 F 3 "~" H 4050 3600 50  0001 C CNN
@@ -433,10 +367,10 @@ BAT-
 Text GLabel 3450 3650 0    50   Input ~ 0
 BAT+
 $Comp
-L Device:R_US Rmto
+L Device:R_US Rmto1
 U 1 1 61E84528
 P 4100 2950
-F 0 "Rmto" H 4150 2900 50  0000 L CNN
+F 0 "Rmto1" H 4150 2900 50  0000 L CNN
 F 1 "56k" H 4150 3000 50  0000 L CNN
 F 2 "RNCP0805FTD22K1:RESC2012X60N" V 4140 2940 50  0001 C CNN
 F 3 "~" H 4100 2950 50  0001 C CNN
@@ -494,7 +428,7 @@ Wire Wire Line
 	4400 1050 4550 1050
 Text GLabel 4550 1050 2    50   Input ~ 0
 DC+
-NoConn ~ 3050 6800
+NoConn ~ 900  6350
 $Comp
 L Device:R_US Rt1
 U 1 1 620A85C3
@@ -648,8 +582,6 @@ F 3 "~" V 7650 4060 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7650 3800 7650 3700
-Wire Wire Line
-	7650 4200 7650 4250
 Text GLabel 7650 3700 0    50   Input ~ 0
 BAT+
 Text GLabel 7650 4350 0    50   Input ~ 0
@@ -665,10 +597,10 @@ Connection ~ 1800 2100
 Wire Wire Line
 	1150 2500 1500 2500
 $Comp
-L power:GND SignalGND?
+L power:GND #SignalGND01
 U 1 1 624B40F1
 P 1550 2900
-F 0 "SignalGND?" H 1550 2650 50  0000 C CNN
+F 0 "#SignalGND01" H 1550 2650 50  0000 C CNN
 F 1 "GND" H 1555 2727 50  0001 C CNN
 F 2 "" H 1550 2900 50  0001 C CNN
 F 3 "" H 1550 2900 50  0001 C CNN
@@ -690,10 +622,10 @@ Connection ~ 4400 1300
 Wire Wire Line
 	4400 1300 4400 1450
 $Comp
-L power:GND SignalGND?
+L power:GND #SignalGND03
 U 1 1 624C105D
 P 4900 3400
-F 0 "SignalGND?" H 4900 3150 50  0000 C CNN
+F 0 "#SignalGND03" H 4900 3150 50  0000 C CNN
 F 1 "GND" H 4905 3227 50  0001 C CNN
 F 2 "" H 4900 3400 50  0001 C CNN
 F 3 "" H 4900 3400 50  0001 C CNN
@@ -725,10 +657,10 @@ Connection ~ 4400 1450
 Wire Wire Line
 	4400 1450 4400 1900
 $Comp
-L Device:C Bypass_?
+L Device:C Bypass_2
 U 1 1 624D22AD
 P 4550 1900
-F 0 "Bypass_?" H 4665 1946 50  0001 C BNN
+F 0 "Bypass_2" H 4665 1946 50  0001 C BNN
 F 1 "0.1u" H 4665 1855 50  0000 C TNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4588 1750 50  0001 C CNN
 F 3 "~" H 4550 1900 50  0001 C CNN
@@ -739,10 +671,10 @@ Connection ~ 4400 1900
 Wire Wire Line
 	4400 1900 4400 2100
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR06
 U 1 1 624D3CDF
 P 5100 1700
-F 0 "#PWR?" H 5100 1450 50  0001 C CNN
+F 0 "#PWR06" H 5100 1450 50  0001 C CNN
 F 1 "GNDREF" H 5105 1527 50  0000 C CNN
 F 2 "" H 5100 1700 50  0001 C CNN
 F 3 "" H 5100 1700 50  0001 C CNN
@@ -759,10 +691,10 @@ Connection ~ 5100 1700
 Wire Wire Line
 	5100 1700 5100 1900
 $Comp
-L Device:C Bypass_?
+L Device:C Bypass_3
 U 1 1 624D9D33
 P 7150 4050
-F 0 "Bypass_?" H 7265 4096 50  0001 C BNN
+F 0 "Bypass_3" H 7265 4096 50  0001 C BNN
 F 1 "470u" H 7265 4005 50  0000 C TNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7188 3900 50  0001 C CNN
 F 3 "~" H 7150 4050 50  0001 C CNN
@@ -776,10 +708,17 @@ Wire Wire Line
 Connection ~ 7650 3800
 Wire Wire Line
 	7150 4200 7650 4200
-Wire Wire Line
-	7650 4200 7650 4250
 Connection ~ 7650 4200
-Connection ~ 7650 4250
 Wire Wire Line
-	7650 4250 7650 4350
+	7650 4200 7650 4350
+NoConn ~ 900  6050
+NoConn ~ 900  6200
+Wire Notes Line
+	500  7150 500  5500
+Wire Notes Line
+	2200 7150 2200 5500
+Wire Notes Line
+	2200 7150 500  7150
+Wire Notes Line
+	500  5500 2200 5500
 $EndSCHEMATC
