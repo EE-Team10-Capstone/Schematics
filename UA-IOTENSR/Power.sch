@@ -73,8 +73,6 @@ $EndComp
 Connection ~ 850  5900
 Wire Wire Line
 	850  5900 800  5900
-Text Notes 550  7100 0    118  ~ 0
-MicroUSB HEADER
 Wire Notes Line
 	500  500  10000 500 
 Wire Notes Line
@@ -721,4 +719,20 @@ Wire Notes Line
 	2200 7150 500  7150
 Wire Notes Line
 	500  5500 2200 5500
+Wire Wire Line
+	900  6750 700  6750
+Connection ~ 900  6750
+$Comp
+L power:GNDREF #PWR0103
+U 1 1 62502E64
+P 700 6750
+F 0 "#PWR0103" H 700 6500 50  0001 C CNN
+F 1 "GNDREF" H 705 6577 50  0000 C CNN
+F 2 "" H 700 6750 50  0001 C CNN
+F 3 "" H 700 6750 50  0001 C CNN
+	1    700  6750
+	1    0    0    -1  
+$EndComp
+Text Notes 550  7100 0    118  ~ 0
+MicroUSB HEADER
 $EndSCHEMATC
